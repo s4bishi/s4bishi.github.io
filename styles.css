@@ -1,52 +1,79 @@
+/* Basic Page Layout */
 body {
-   font-family: 'Arial', sans-serif;
+   font-family: Arial, sans-serif;
+   background-color: #f5f5f5;
    margin: 0;
    padding: 0;
-   background-color: #f5f5f5;
+   line-height: 1.6;
 }
 
 header {
    background-color: #333;
-   color: white;
+   color: #fff;
    padding: 20px;
    text-align: center;
 }
 
+nav ul {
+   list-style-type: none;
+   padding: 0;
+   text-align: center;
+}
+
+nav ul li {
+   display: inline;
+   margin-right: 15px;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+}
+
 section {
-   margin: 20px;
    padding: 20px;
+   margin: 20px;
    background-color: #fff;
    border-radius: 8px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.review {
-   border: 1px solid #ddd;
-   padding: 10px;
-   margin-top: 10px;
-   background-color: white;
-}
-
-.review img {
-   max-width: 150px;
-   margin-right: 20px;
-   float: left;
-}
-
-.review h3 {
-   font-size: 1.5em;
-}
-
-.review p {
-   clear: both;
-   padding-top: 10px;
-}
-
-h2 {
+h1, h2, h3 {
    color: #444;
-   font-size: 1.8em;
 }
 
 p {
-   font-size: 1.2em;
+   color: #666;
+}
+
+ol {
+   list-style-type: decimal;
+   padding-left: 20px;
+}
+
+.review-summary, .travel-summary {
+   margin-bottom: 20px;
+}
+
+.review img, .review-summary img, .travel-summary img {
+   max-width: 100px;
+   margin-right: 10px;
+   float: left;
+}
+
+/* Galleries */
+.photo-gallery {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.photo-gallery img {
+   width: 30%;
+   margin: 10px;
+   border-radius: 8px;
+}
+
+.video-gallery video {
+   width: 45%;
+   margin: 10px;
 }
